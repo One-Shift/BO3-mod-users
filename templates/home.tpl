@@ -7,11 +7,12 @@
 
 </style>
 
-<div class="container-fluid">
-  <div class="row">
-    <a href="http://ms.critec.pt/0/en/users/add" class="btn btn-add" role="button"><i class="fa fa-plus" aria-hidden="true"></i><div class="block15"></div>{c2r-lg-add-btn}</a>
-  </div>
-
+<div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 taright">
+          <a href="http://ms.critec.pt/0/en/users/add" class="btn btn-add" role="button"><i class="fa fa-plus" aria-hidden="true"></i><div class="block15"></div>{c2r-lg-add-btn}</a>
+      </div>
+</div>
+<div class="spacer15"></div>
     <div class="row">
         <div class="col-sm-12">
             <table class="table table-striped">
@@ -24,7 +25,7 @@
                   <th>{c2r-lg-rank-title}</th><!--USER'S RANK-->
                   <th>{c2r-lg-status-title}</th><!--USER'S STATUS-->
                   <th>{c2r-lg-date-title}</th><!--USER'S REGISTRATION DATE-->
-                  <th>{c2r-lg-action-title}</th><!--USER EDIT BTN-->
+                  <th></th><!--USER EDIT BTN-->
                 </tr>
 
                 {c2r-home-list}
@@ -33,4 +34,3 @@
             </table>
         </div>
     </div>
-</div>

@@ -37,9 +37,9 @@
     <div class="form-group">
         <label for="inputRank">{c2r-lg-rank}</label>
         <select class="form-control" id="inputRank" name="inputRank">
-          <option>{c2r-lg-owner}</option>
-          <option>{c2r-lg-manager}</option>
-          <option selected>{c2r-lg-member}</option>
+          <option value="{c2r-lg-owner-value}">{c2r-lg-owner}</option>
+          <option value="{c2r-lg-manager-value}">{c2r-lg-manager}</option>
+          <option value="{c2r-lg-member-value}" selected>{c2r-lg-member}</option>
         </select>
     </div>
   </div>
@@ -56,7 +56,8 @@
   <div>
     <div class="form-group">
         <div class="checkbox">
-          <label><input type="checkbox" value="1">{c2r-lg-status}</label>
+            <input name="inputStatus" value="0" type="hidden">
+            <label><input name="inputStatus" id="inputStatus" type="checkbox" value="1">{c2r-lg-status}</label>
         </div>
     </div>
   </div>

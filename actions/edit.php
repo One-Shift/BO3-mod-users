@@ -13,7 +13,8 @@ $form = str_replace(
   "{c2r-lg-member}",
   "{c2r-lg-code}",
   "{c2r-lg-status}",
-  "{c2r-btn-save}"
+  "{c2r-btn-save}",
+
 ],
 [
   $mdl_lang["edit"]["name"],
@@ -27,20 +28,25 @@ $form = str_replace(
   $mdl_lang["edit"]["code"],
   $mdl_lang["edit"]["status"],
   $mdl_lang["edit"]["save"],
+
 ],
 $form_tpl
 );
 
 $mdl=str_replace(
   [
+    "{c2r-user-id}",
     "{c2r-lg-sure}",
     "{c2r-lg-remove}",
-    "{c2r-edituser-form}"
+    "{c2r-edituser-form}",
+    "{c2r-lg-check-remove}"
   ],
   [
+    $id,
     $mdl_lang["edit"]["sure"],
     $mdl_lang["edit"]["remove"],
-    $form
+    $form,
+    $mdl_lang["edit"]["sure"]
   ],
   functions::mdl_load("templates/edit.tpl")
 );
