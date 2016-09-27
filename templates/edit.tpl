@@ -1,9 +1,25 @@
+{c2r-return-message}
 <div class="spacer30 mb-spacer15"></div>
 <div class="row">
   <div class="col-md-4 tacenter">
-      <img src="http://www.gravatar.com/avatar/SOMEEMAILCONVERTEDINMD5?s=300&r=g&d=mm" class="img-circle">
+        <div class="row">
+              <img src="http://www.gravatar.com/avatar/{c2r-md5-mail}?s=300&r=g&d=mm" class="img-circle">
+        </div>
 
-      <div class="spacer30"></div>
+        <div class="spacer30"></div>
+
+        <div class="row">
+              <!--USER INFO - BEGINS-->
+
+              <p>{c2r-username}</p>
+              <p>{c2r-email}</p>
+              <p>{c2r-rank}</p>
+              <p>{c2r-code}</p>
+
+              <!--USER INFO - ENDS-->
+        </div>
+
+        <div class="spacer30"></div>
 
       <div class="row">
         <div class="col-md-12 tacenter">

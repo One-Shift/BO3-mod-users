@@ -2,9 +2,9 @@
 $user=new user();
 if($_POST["inputRemove"]==1)
 {
-    if($user->delete($id))
+    $user->setId($id);
+    if($user->delete())
     {
-        echo "<script>alert('".$id."')</script>";
         $remove_message=$mdl_lang["remove"]["message-success"];
         $success=1;
     }
